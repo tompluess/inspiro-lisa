@@ -1,7 +1,7 @@
 version: "3"
 services:
   db:
-    image: mysql:5.7
+    image: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: MyR00tMySQLPa$$5w0rD
@@ -21,6 +21,6 @@ services:
       WORDPRESS_DB_PASSWORD: Pa$$5w0rD
       WORDPRESS_DB_NAME: MyWordPressDatabaseName
     volumes:
-      ["./:/var/www/html"]
+      ["./themes/lisacandrian:/var/www/html/wp-content/themes/lisacandrian"]
 volumes:
   mysql: {}
