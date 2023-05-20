@@ -53,16 +53,19 @@ textarea {
 }
 
 .site-title {
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 800;
   text-transform: none;
+  opacity: 0.9;
 }
 
 .site-description {
   font-size: 1.5em;
+  font-weight: 500;
   margin: 0.4em 0;
   line-height: 1.3;
+  opacity: 0.9;
 }
 
 .site-footer .widget-area {
@@ -107,8 +110,8 @@ textarea {
   }
 
   .site-title {
-    font-size: 48px;
-    font-size: 3rem;
+    font-size: 80px;
+    font-size: 5rem;
   }
 
   .site-description {
@@ -127,18 +130,36 @@ textarea {
   }
 }
 
+/* Color concept
+  Strategy: add the classes that appear in frontend and adapt */
+
+.side-nav .search-form .search-submit,
+.side-nav .wp-block-search__button,
+.site-footer .search-form .search-submit,
+.site-footer .wp-block-search__button {
+  color: #738063;
+  border: 2px solid #738063;
+}
+
+.side-nav .search-form .search-submit:hover,
+.side-nav .wp-block-search__button:hover,
+.site-footer .search-form .search-submit:hover,
+.site-footer .wp-block-search__button:hover {
+  text-decoration: none;
+  color: #dbd3c9;
+  border-color: #dbd3c9;
+}
 
 /* Include additinal fonts.
    Credits to https://wphelp.de/fonts-schriften-einbinden
 */
 @font-face {
-  font-family: 'MaryHelenJF';
-  src: url('fonts/MaryHelenJF-Regular.ttf');
-  src: url('fonts/MaryHelenJF-Regular.ttf') format('truetype');
+  font-family: "MaryHelenJF";
+  src: url("fonts/MaryHelenJF-Regular.ttf");
+  src: url("fonts/MaryHelenJF-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 
 /* To use an additinal font everywhere, add this example code to the "Additional CSS" section:
 
